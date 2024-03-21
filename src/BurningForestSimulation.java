@@ -139,6 +139,7 @@ public class BurningForestSimulation {
 
     public static void main(String[] args) {
         simulationResults();
+        System.out.println("\n-----------------------------------------------------------------------------------\n");
         BurningForestSimulation burningForestSimulation = new BurningForestSimulation(20, 0.32);
         burningForestSimulation.makeSimulation();
     }
