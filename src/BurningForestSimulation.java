@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class BurningForestSimulation {
-    public static final String COLOR_RESET = "\u001B[0m";
-    public static final String COLOR_GREEN = "\u001B[32m";
-    public static final String COLOR_RED = "\u001B[31m";
+    private static final String COLOR_RESET = "\u001B[0m";
+    private static final String COLOR_GREEN = "\u001B[32m";
+    private static final String COLOR_RED = "\u001B[31m";
     private final String[][] map;
     private final int size;
     private final double forestation;
@@ -73,7 +73,7 @@ public class BurningForestSimulation {
 
                 All trees: %d.
                 Surviving trees: %d.
-                burnt trees: %d.
+                Burnt trees: %d.
                 Percent of trees burnt: %.2f%%""", trees[0], trees[1], trees[2], (double) trees[2] / trees[0] * 100);
     }
 
@@ -112,7 +112,7 @@ public class BurningForestSimulation {
         return trees;
     }
 
-    private static void simulationResults() {
+    public static void simulationResults() {
         try {
             FileWriter writer = new FileWriter("results.txt");
             writer.write("Forestation Value; Iteration; All Trees; Alive Trees; Burnt Trees; % of Burnt;\n");
@@ -139,6 +139,7 @@ public class BurningForestSimulation {
 
     public static void main(String[] args) {
         simulationResults();
+        System.out.println("\n-----------------------------------------------------------------------------------\n");
         BurningForestSimulation burningForestSimulation = new BurningForestSimulation(20, 0.32);
         burningForestSimulation.makeSimulation();
     }
