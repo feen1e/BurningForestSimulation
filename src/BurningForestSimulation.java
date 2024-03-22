@@ -68,13 +68,15 @@ public class BurningForestSimulation {
         } while (nothingToBurn < this.size * this.size);
 
         int[] trees = getTreeRatio();
-        System.out.printf("""
+        if (printMap) {
+            System.out.printf("""
 
 
-                All trees: %d.
-                Surviving trees: %d.
-                Burnt trees: %d.
-                Percent of trees burnt: %.2f%%.""", trees[0], trees[1], trees[2], (double) trees[2] / trees[0] * 100);
+                    All trees: %d.
+                    Surviving trees: %d.
+                    Burnt trees: %d.
+                    Percent of trees burnt: %.2f%%.""", trees[0], trees[1], trees[2], (double) trees[2] / trees[0] * 100);
+        }
     }
 
     public void printMap(String[][] map) {
