@@ -45,7 +45,6 @@ public class BurningForestSimulation {
         do {
             waitAndPrint(0.5);
             String[][] copyOfMap = new String[this.map.length][];
-
             for (int i = 0; i < this.map.length; i++) {
                 copyOfMap[i] = Arrays.copyOf(this.map[i], this.map[i].length);
             }
@@ -70,12 +69,10 @@ public class BurningForestSimulation {
         int[] trees = getTreeRatio();
         if (printMap) {
             System.out.printf("""
-
-
                     All trees: %d.
                     Surviving trees: %d.
                     Burnt trees: %d.
-                    Percent of trees burnt: %.2f%%.""", trees[0], trees[1], trees[2], (double) trees[2] / trees[0] * 100);
+                    Percentage of trees burnt: %.2f%%.""", trees[0], trees[1], trees[2], (double) trees[2] / trees[0] * 100);
         }
     }
 

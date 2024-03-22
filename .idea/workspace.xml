@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5344ef9-85a1-4e97-9e90-c20959472d0c" name="Changes" comment="update README.md">
+    <list default="true" id="d5344ef9-85a1-4e97-9e90-c20959472d0c" name="Changes" comment="no longer showing tree stats of every single simulation while running simulationResults() method (200 simulations)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BurningForestSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BurningForestSimulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "feen1e"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="933822c6-6544-42f5-a5bf-4473e7c45beb" />
+        <option name="url" value="https://github.com/feen1e/BurningForestSimulation.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,6 +93,7 @@
       <workItem from="1710942046511" duration="11756000" />
       <workItem from="1711046042972" duration="281000" />
       <workItem from="1711046331345" duration="1614000" />
+      <workItem from="1711114597608" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -127,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711056625847</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="no longer showing tree stats of every single simulation while running simulationResults() method (200 simulations)">
+      <option name="closed" value="true" />
+      <created>1711114875758</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711114875758</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +171,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="no longer showing tree stats of every single simulation while running simulationResults() method (200 simulations)" />
+    <option name="LAST_COMMIT_MESSAGE" value="no longer showing tree stats of every single simulation while running simulationResults() method (200 simulations)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
