@@ -125,10 +125,15 @@ public class BurningForestSimulation {
                     results.append("\nPercentage of trees burnt: " + String.format("%.3f", (double) trees[2] / trees[0] * 100) + "%");
                     text.setText("Simulation complete.");
                     System.out.printf("""
+                        
+                        -----------------------------------------------------------------------------------
                         All trees: %d.
                         Surviving trees: %d.
                         Burnt trees: %d.
-                        Percentage of trees burnt: %.2f%%.""", trees[0], trees[1], trees[2], (double) trees[2] / trees[0] * 100);
+                        Percentage of trees burnt: %.2f%%.
+                        -----------------------------------------------------------------------------------
+                        
+                        """, trees[0], trees[1], trees[2], (double) trees[2] / trees[0] * 100);
                 });
             }).start();
         } else {
